@@ -5,7 +5,7 @@ title: FRISEUR HAARESZEITEN
 about: Ihr Frisuren-Salon für Damen und Herren in Stuttgart-Degerloch.
 description: "Ihr Frisuren-Salon für Damen und Herren in Stuttgart-Degerloch"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl: "/" #important: start with /
+baseurl: "" #important: start with /
 url: "https://haareszeiten.github.io/"
 
 # Build settings
