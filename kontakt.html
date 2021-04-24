@@ -1,0 +1,42 @@
+---
+layout: contact
+title: Kontakt
+permalink: /kontakt/
+showfooter: no
+---
+
+
+
+<div class="container mtb">
+    <div class="row">
+
+        <div class="col-lg-4">
+            <h4>Adresse</h4>
+            <div class="hline"></div>
+                <p>
+                    {{ site.title }}<br/>
+                    {% for line in site.address.first.lines %}
+                        {{ line }} <br>
+                    {% endfor %}
+                </p>
+                <br/>
+            <h4>Öffnungszeiten</h4>
+            <div class="hline"></div> 
+              <p>
+                {% for line in site.hours.first.lines %}
+                  {{ line }} <br>
+                {% endfor %}
+              </p>  
+              <br/>
+            </div>
+
+          <div class="col-lg-8">
+            <h4>Wir sind hier:</h4>
+            <div class="hline"></div>
+            <br>
+            <img src="{{ "/img/openstreetmap.png" | prepend: site.baseurl }}" class="img-responsive">
+            <p align="right">Kartenausschnitt: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a></p>
+          </div><!--/col-lg-8 -->
+
+      </div><!--/row -->
+</div><!--/container -->

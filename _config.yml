@@ -1,0 +1,52 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+title: FRISEUR HAARESZEITEN
+about: Ihr Frisuren-Salon für Damen und Herren in Stuttgart-Degerloch.
+description: "Ihr Frisuren-Salon für Damen und Herren in Stuttgart-Degerloch"
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "/testsite" #important: start with /
+url: "https://harald-u.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
+
+colors:  #in hex code if not noted else
+  primary: "#ffcc01" #"#F70031"
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
+  secondary: "#384452" #"#33004D"
+  link: "#428bca"
+  link_hover: "#01b2fe"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
+
+# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
+address:
+  - lines:
+    - Karl-Pfaff-Str. 24b
+    - 70597 Stuttgart
+    - 0711 - 76 66 33
+hours:
+  - lines:
+    - Dienstag-Freitag 9:00-18:30 Uhr
+    - Samstag 9:00-14:00 Uhr
+    - Telefonische Terminvereinbarung    
+email: 
+
+# Team members information. Shown on Team page. 4 in a row
+members:
+  - name: Herr Frank Leser
+    position: 
+    text: 
+    img: FL.jpg
+  - name: Frau Steck
+    position: 
+    text: 
+    img: KS.jpg
+  - name: Frau Inge Paradiso 
+    position: 
+    text: 
+    img: female-1826875_640.png
+
