@@ -8,10 +8,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {% if page.title == "Home" %}
-      &nbsp;
-      {% else %}
-      <a class="navbar-brand" href="{{ "/"  | prepend: site.baseurl }}"><img src="{{ "/img/FRISEUR-HAARESZEITEN-ge-small.png" | prepend: site.baseurl }}" class="img-responsive"></a>
+      {% if page.title != "Home" %}
+        <a class="navbar-brand" href="{{ "/"  | prepend: site.baseurl }}"><img src="{{ "/img/FRISEUR-HAARESZEITEN-ws-small.png" | prepend: site.baseurl }}" class="img-responsive"></a>
       {% endif %}
 
       
