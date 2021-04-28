@@ -4,15 +4,23 @@
     {% include head.html %}
 
     <body>
+
         {% include nav.html %}
+
+        <!-- Home/index.html braucht kein wrap -->
+        {% unless page.title == "Home" %} 
+            {% include wrap.html %}
+        {% endunless %}
 
             {{ content }}
 
-        <!-- Kontakt und Impressum brauchen keinen Footer -->    
-        {% if page.layout != "contact" %} 
+        <!-- Kontakt, Impressum und 404 brauchen keinen Footer -->
+        {% unless page.title == "Kontakt" or page.title == "Impressum" or page.title == "404 - Not found" %} 
             {% include footer.html %}
-        {% endif %} 
+        {% endunless %}
 
         {% include js.html %}
+        
     </body>
+
 </html>
