@@ -7,10 +7,12 @@
 
         {% include nav.html %}
 
-        <!-- Home/index.html braucht kein wrap -->
-        {% unless page.title == "Home" %} 
+        <!-- banner.html für Home/index.html, wrap.html für andere Seiten -->
+        {% if page.title == "Home" %} 
+            {% include banner.html %}
+        {% else %}
             {% include wrap.html %}
-        {% endunless %}
+        {% endif %}
 
             {{ content }}
 
