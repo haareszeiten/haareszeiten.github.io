@@ -16,10 +16,10 @@
 
             {{ content }}
 
-        <!-- Kontakt, Impressum und 404 brauchen keinen Footer -->
-        {% unless page.title == "Kontakt" or page.title == "Impressum" or page.title == "404 - Not found" %} 
+        <!-- footer: yes in Frontmatter? -->
+        {% if page.footer == true %}
             {% include footer.html %}
-        {% endunless %}
+        {% endif %}
 
         {% include js.html %}
         
