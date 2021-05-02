@@ -7,10 +7,10 @@ footer: yes
 
 <div class="container mtb">
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-md-4">
             <img class="img-responsive" src="{{ "/img/salon/SALON-NEU.jpg" | prepend: site.baseurl }}" alt="">
         </div>
-        <div class="col-lg-8">
+        <div class="col-md-8">
             <h3>Friseur Haareszeiten</h3>
             <p>Wir sind ein motiviertes Team aus fachlich kompetenten und kreativen Mitarbeitern. Wir lassen vom 
                 Beratungsgespräch über die Umsetzung individueller Stylings und Colorationen bis zum Wohlfühlen keine Wünsche offen. 
@@ -20,20 +20,16 @@ footer: yes
             
         </div>
     </div><!--/row -->
-</div><!--/container -->
 
-<div class="container mtb">
     <div class="row centered">
-        <h3 class="mb">Wir sind für Sie da</h3>
-        
+        <h3 class="mt">Wir sind für Sie da</h3>
+        <br>
         {% for member in site.members %}
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="he-wrap tpl6">
+        <div class="col-md-4">
             <img src="{{ "/img/team/" | prepend: site.baseurl }}{{ member.img }}" alt="">	
-            </div><!-- he wrap -->
             <h4>{{ member.name }}</h4>
             <p>{{ member.text }}</p>
-        </div><! --/col-lg-3 -->	 	
+        </div>	 	
         {% endfor %}
         
     </div><! --/row -->
