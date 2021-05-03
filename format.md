@@ -5,6 +5,8 @@ permalink: /format/
 footer: no
 ---
 
+![](img/bootstrap-raster.png)
+
 ## Bild
 ```
 <img class="img-responsive" src="{{ "/img/xx/yyy.zzz" | prepend: site.baseurl }}" alt="">
