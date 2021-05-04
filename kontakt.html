@@ -9,16 +9,17 @@ footer: no
     <div class="row">
 
         <div class="col-md-4">
-            <h4>Adresse</h4>
+                    
+            <h4>Adresse:</h4>
             <div class="hline"></div>
-                <p>
-                    {{ site.title }}<br/>
-                    {% for line in site.address.first.lines %}
-                        {{ line }} <br>
-                    {% endfor %}
-                </p>
-                <br/>
-            <h4>Öffnungszeiten</h4>
+            <p>
+              {{ site.title }}<br/>
+              {% for line in site.address.first.lines %}
+                  {{ line }} <br>
+              {% endfor %}
+             </p>           
+            <img class="img-responsive" src="{{ "/img/salon/front.JPG" | prepend: site.baseurl }}" alt="">
+            <h4 class="mt">Öffnungszeiten:</h4>
             <div class="hline"></div> 
               <p>
                 {% for line in site.hours.first.lines %}
