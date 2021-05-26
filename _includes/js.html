@@ -30,18 +30,18 @@
 			portfolioLayout = 'masonry';
 		}
 				
-		$container.isotope({
-			filter: '*',
-			animationEngine: 'best-available',
-			layoutMode: portfolioLayout,
-			animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false
-		},
-		masonry: {
-		}
-		}, refreshWaypoints());
+//		$container.isotope({
+//			filter: '*',
+//			animationEngine: 'best-available',
+//			layoutMode: portfolioLayout,
+//			animationOptions: {
+//			duration: 750,
+//			easing: 'linear',
+//			queue: false
+//		},
+//		masonry: {
+//		}
+//		}, refreshWaypoints());
 		
 		function refreshWaypoints() {
 			setTimeout(function() {
@@ -91,9 +91,9 @@
 			$container.isotope('reLayout');
 		}
 			
-		$container.imagesLoaded(function () { 
-			setPortfolio();
-		});
+//		$container.imagesLoaded(function () { 
+//			setPortfolio();
+//		});
 		
 		$(window).on('resize', function () { 
 		setPortfolio();          
