@@ -8,3 +8,4 @@ This is a [Jekyll](http://jekyllrb.com/) port of the [Solid theme](http://www.bl
 ## Examples for Bootstrap formating:
 
 [http://holdirbootstrap.de/css/#type](http://holdirbootstrap.de/css/#type)
+
