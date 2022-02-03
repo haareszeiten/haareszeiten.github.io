@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
 
-    {% include head.html %}
+{% include head.html %}
 
-    <body>
+<body>
 
-        {% include nav.html %}
+    {% include nav.html %}
 
-        <!-- banner.html für Home/index.html, wrap.html für andere Seiten -->
-        {% if page.title == "Home" %} 
-            {% include banner.html %}
-        {% else %}
-            {% include wrap.html %}
-        {% endif %}
+    <!-- banner.html für Home/index.html, wrap.html für andere Seiten -->
+    {% if page.title == "Home" %}
+    {% include banner.html %}
+    {% else %}
+    {% include wrap.html %}
+    {% endif %}
 
-            {{ content }}
+    {{ content }}
 
-        <!-- footer: yes in Frontmatter? -->
-        {% if page.footer == true %}
-            {% include footer.html %}
-        {% endif %}
+    <!-- footer: yes in Frontmatter? -->
+    {% if page.footer == true %}
+    {% include footer.html %}
+    {% endif %}
 
-        {% include footer_2.html %}
+    {% include footer_2.html %}
 
-        {% include js.html %}
+    {% include js.html %}
 
-        {% include cookie-consent.html %}
-        
-    </body>
+    {% include cookie-consent.html %}
+    <br>
+</body>
 
 </html>
