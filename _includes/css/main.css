@@ -163,6 +163,12 @@ a:focus {
   background-color: {{ site.colors.primary }};
   border-color: {{ site.colors.primary }};
 }
+.btn-theme-ok {
+	color: rgb(70, 70, 70);
+	background-color: rgb(18, 243, 10) ;
+	border-color: {{ site.colors.secondary }};
+	margin: 4px;
+  }
 
 .dmbutton:hover,
 .dmbutton:active,
