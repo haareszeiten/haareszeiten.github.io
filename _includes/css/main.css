@@ -169,6 +169,12 @@ a:focus {
 	border-color: {{ site.colors.secondary }};
 	margin: 4px;
   }
+.btn-theme-info {
+	color: rgb(221, 221, 221);
+	background-color: rgb(10, 98, 170) ;
+	border-color: {{ site.colors.secondary }};
+	margin: 4px;
+  }  
 
 .dmbutton:hover,
 .dmbutton:active,
